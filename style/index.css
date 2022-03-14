@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes transitionIn {
+    from { 
+      opacity: 0;
+     }
+    to { 
+      opacity: 1;
+     }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.main-content {
+    transition: all .3s ease;
+}
+  
+.main-content header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    transition: all .3s ease;
+    z-index: 99;
+    height: 82px
+}
+  
+header h2 {
+    color: black;
+    font-weight: 600;
+}
+
+header i {
+    font-size: 40px;
+}
+  
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user a {
+    text-decoration: none;
+    color: black;
+}
+
+.user a:hover {
+    text-decoration: underline;
+}
+
+main {
+    animation: transitionIn .25s ease-in;
+    padding: 40px 25px;
+    min-height: calc(100vh - 90px);
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    font-size: 25px;
+    width: 500px;
+    text-align: center;
+}
+
+.text h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+.main img {
+    width: 60%;
+    left: 38%;
+    top: 25%;
+    position: absolute;
+}

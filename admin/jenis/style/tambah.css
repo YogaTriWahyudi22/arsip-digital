@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@keyframes transitionIn {
+    from { 
+      opacity: 0;
+     }
+    to { 
+      opacity: 1;
+     }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(235, 235, 235);
+}
+
+.main-content {
+    transition: all .3s ease;
+  }
+  
+  .main-content header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    transition: all .3s ease;
+  }
+  
+  header h2 {
+    color: rgba(0, 0, 24);
+    animation: transitionIn .25s ease-in;
+    font-weight: 600;
+  }
+  
+  .user {
+    animation: transitionIn .25s ease-in;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user img {
+    border-radius: 20%;
+    margin-right: 1rem;
+  }
+  
+  .user h4 {
+    margin-bottom: 0rem !important;
+  }
+  
+  .user small {
+    display: inline-block;
+    color: gray;
+  }
+  
+  .user .logout {
+    margin-left: 40px;
+    font-size: 25px;
+  }
+  
+  .user .logout a {
+    color: rgba(0, 0, 24);
+  }
+  
+  main {
+      animation: transitionIn .25s ease-in;
+      padding: 40px 25px;
+      min-height: calc(100vh - 90px);
+  }
+  
+  .table {
+      animation: transitionIn .25s ease-in;
+      margin-top: 80px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    .card-header, .card-body {
+      padding: 1rem;
+    }
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid silver;
+    }
+    
+    .card-header button {
+      border: none;
+      color: white;
+      padding: 5px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      border-radius: 12px;
+    }
+    
+    .card-header .buttn .tmbhdt {
+      background-color: rgba(0, 0, 24,0.6);
+    }
+    
+    .card-header .buttn .tmbhdt:hover {
+      background-color: rgba(0, 0, 24);
+    }
+    
+    table {
+      border-collapse: collapse;
+    }
+    
+    thead tr {
+      border-top: 3px solid rgba(0, 0, 24);
+      border-bottom: 3px solid rgba(0, 0, 24);
+    }
+    
+    thead td {
+      font-weight: 700;
+    }
+    
+    td {
+      padding: .5rem 1rem;
+      font-size: .9rem;
+      color: rgba(0,0,24);
+    }
+    
+    tbody td {
+      border-bottom: 1px dashed silver;
+    }
+    
+    .table-responsive {
+      overflow-x: auto;
+    }
+    
+    table tbody .btnedit {
+      border: none;
+      color: white;
+      padding: 4px 11px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      background-color: rgba(0, 128, 0, 0.65);
+    }
+    
+    table tbody .btnhps {
+      border: none;
+      color: white;
+      padding: 4px 11px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      background-color: rgba(255, 0, 0, 0.65);
+    }
+    
+    table tbody .btnedit:hover {
+      background-color: green;
+    }
+    
+    table tbody .btnhps:hover {
+      background-color: red;
+    }
+  
+  table input {
+      width: 100%;
+      padding: 7px 15px;
+  }
+  
+  table select {
+    width: 500px;
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+  
+  table textarea {
+      height: 200px;
+      width: 100%;
+      padding: 7px 15px;
+  }
+  
+  .footer .btnn {
+    margin-top: 15px;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: rgb(1, 201, 1);
+  }
+  
+  .footer .btnnn {
+    margin-top: 15px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #2F3042;
+  }
